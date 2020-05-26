@@ -17,10 +17,12 @@ class CountdownTimer {
   }
 
   start() {
-    updateDate(0);
+    let currentTime = Date.now();
+    let deltaTime = this.targetDate - currentTime;
+    updateDate(deltaTime);
     this.selector = setInterval(() => {
-      const currentTime = Date.now();
-      const deltaTime = this.targetDate - currentTime;
+      currentTime = Date.now();
+      deltaTime = this.targetDate - currentTime;
       updateDate(deltaTime);
     }, 1000);
   }
