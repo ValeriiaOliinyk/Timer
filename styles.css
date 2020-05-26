@@ -1,0 +1,34 @@
+body {
+  height: 100vh;
+  background-image: url(./images/christmas-1911637_1280.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.timer {
+  max-width: 800px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.field {
+  display: flex;
+}
+
+.field + .field {
+  margin-left: 15px;
+}
+
+.value {
+  margin-right: 10px;
+}
+
+.decoration {
+  font-family: 'Dancing Script', cursive;
+  font-size: 45px;
+  color: rgb(241, 229, 229);
+}
